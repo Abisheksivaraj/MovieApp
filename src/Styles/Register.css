@@ -1,0 +1,9 @@
+body {
+  background-image: url(https://thedrum-media.imgix.net/thedrum-prod/s3/news/tmp/10557/netflixa.jpg?w=1280&ar=default&fit=crop&crop=faces,edges&auto=format);
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  position: fixed;
+    backdrop-filter: blur(5px);
+}
+
