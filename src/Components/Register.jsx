@@ -5,8 +5,9 @@ const Register = () => {
   return (
     <div className="reg-content">
       <div className="inputs">
+        <h1>SignUp</h1>
         <form action="#">
-          <div className="name-input">
+          <div className="form-input">
             <input
               type="text"
               name="UserName"
@@ -14,22 +15,23 @@ const Register = () => {
               autoComplete="off"
               required
             />
-
+            <span></span>
             <label htmlFor="UserName">UserName</label>
           </div>
 
-          <div className="mail-input">
-            <input
+          <div className="form-input">
+            <input className="username"
               type="mail"
               name="Mail"
               placeholder=""
               autoComplete="off"
               required
             />
+            <span></span>
             <label htmlFor="Mail">Mail</label>
           </div>
 
-          <div className="password-input">
+          <div className="form-input">
             <input
               type="password"
               placeholder=""
@@ -37,16 +39,25 @@ const Register = () => {
               autoComplete="off"
               required
             />
+            <span></span>
             <label htmlFor="Password">Password</label>
           </div>
 
-          <button type="submit" className="signup">SignUP</button>
+          <button type="submit" className="signup">
+            Signup
+          </button>
         </form>
+        <div className="line"></div>
+        {/* <div className="google">
+          <button type="submit" className="Google">
+            Signup with Google
+          </button>
+        </div> */}
       </div>
-      <li></li>
+      {/* <div className="line"></div>
       <div className="google">
         <button type="submit" className="Google">Signup with Google</button>
-      </div>
+      </div> */}
     </div>
   );
 };
