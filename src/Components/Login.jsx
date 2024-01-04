@@ -55,16 +55,7 @@ const Login = () => {
           </button>
         </form>
         <div className="line"></div>
-        {/* <div className="google">
-          <button type="submit" className="Google">
-            Signup with Google
-          </button>
-        </div> */}
       </div>
-      {/* <div className="line"></div>
-      <div className="google">
-        <button type="submit" className="Google">Signup with Google</button>
-      </div> */}
     </div>
   );
 };
