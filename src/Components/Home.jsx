@@ -1,15 +1,15 @@
-import React from 'react'
-import Sidebar from './Sidebar'
-import Navbar from './Navbar'
+import React from "react";
+import Sidebar from "./Sidebar";
+import Navbar from "./Navbar";
 
-import '../Styles/Home.css'
+import "../Styles/Home.css";
 
 const Home = () => {
   return (
     <div className="home">
-      <Sidebar/>
+      <Sidebar />
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;

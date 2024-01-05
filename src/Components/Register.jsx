@@ -20,7 +20,8 @@ const Register = () => {
           </div>
 
           <div className="form-input">
-            <input className="username"
+            <input
+              className="username"
               type="mail"
               name="Mail"
               placeholder=""
