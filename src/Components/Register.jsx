@@ -1,6 +1,7 @@
 import React from "react";
 import "../Styles/Register.css";
 
+
 const Register = () => {
   return (
     <div className="reg-content">

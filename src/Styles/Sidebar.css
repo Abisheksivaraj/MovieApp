@@ -1,14 +1,44 @@
-.sidebar{
+.sidebar {
   background-color: #2b2b2b;
   width: 6rem;
   height: 94vh;
   margin: 1rem;
   border-radius: 1rem;
-  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
-img{
+img {
   height: 4rem;
   width: 4rem;
   margin: 1rem;
+}
+
+li {
+  font-size: 1.5rem;
+  color: aliceblue;
+  list-style: none;
+}
+
+li:hover {
+  background-color: #ff9637;
+  height: 2rem;
+  width: 2rem;
+  border-radius: 10px;
+  /* transition: 0.5s; */
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 2rem;
+  /* height: 2rem;
+  width: 2rem; */
+}
+
+.logout {
+  text-align: center;
+  color: red;
 }
