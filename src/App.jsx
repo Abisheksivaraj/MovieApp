@@ -18,23 +18,22 @@ function App() {
     return children;
   }
   return (
-    // <BrowserRouter>
-    //   <Routes>
-    //     <Route
-    //       path="/"
-    //       element={
-    //         <ProtectedRoute>
-    //           <Home />
-    //         </ProtectedRoute>
-    //       }
-    //     />
+    <BrowserRouter>
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <ProtectedRoute>
+              <Home />
+            </ProtectedRoute>
+          }
+        />
 
-    //     <Route path="/login" element={<Login />} />
-    //     <Route path="/register" element={<Register />} />
-    //   </Routes>
-    // </BrowserRouter>
-    <Home/>
-  );
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
+      </Routes>
+    </BrowserRouter>
+  )
 }
 
 export default App;

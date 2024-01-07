@@ -1,6 +1,4 @@
-
-
-.reg-content{
+.reg-content {
   background-image: url(https://thedrum-media.imgix.net/thedrum-prod/s3/news/tmp/10557/netflixa.jpg?w=1280&ar=default&fit=crop&crop=faces,edges&auto=format);
   width: 100vw;
   height: 100vh;
@@ -20,7 +18,7 @@
   background: rgb(40, 39, 39);
   border-radius: 10px;
   box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.05);
-  height: rem;
+  height: 31rem;
   backdrop-filter: blur(5px);
 }
 .inputs h1 {
@@ -29,12 +27,10 @@
   color: #ff9637;
 }
 
-
-
 .inputs form {
   padding: 0 40px;
   box-sizing: border-box;
-  color:silver;
+  color: silver;
 }
 
 form .form-input {
@@ -53,7 +49,7 @@ form .form-input {
   border: none;
   background: none;
   outline: none;
-  color:silver;
+  color: silver;
 }
 .form-input label {
   position: absolute;
@@ -118,4 +114,31 @@ input[type="submit"]:hover {
 }
 .signup :hover {
   text-decoration: underline;
+}
+
+.or {
+  text-align: center;
+  color: #adadad;
+  font-weight: 600;
+}
+
+.icons {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.google,
+.facebook,
+.twitter {
+  height: 2rem;
+  width: 3.5rem;
+  background-color: #ff9637;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  cursor: pointer
 }

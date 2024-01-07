@@ -1,8 +1,42 @@
 import React from "react";
+import { FaGoogle } from "react-icons/fa";
+import { FaFacebookF } from "react-icons/fa";
+import { FaTwitter } from "react-icons/fa";
 import "../Styles/Register.css";
+
+import {signInWithPopup,FacebookAuthProvider, GoogleAuthProvider} from 'firebase/auth';
+import { authentication } from "../Firebase";
+
+
 
 
 const Register = () => {
+
+  const signInWithFacebook = () => {
+
+    const provider = new FacebookAuthProvider();
+    signInWithPopup(authentication, provider)
+      .then((rel) => {
+        console.log(rel);
+      })
+      .catch((err) => {
+        console.log(err.message);
+      });
+
+  }
+
+  const signInWithGoogle = () => {
+    const provider = new GoogleAuthProvider();
+    signInWithPopup(authentication, provider)
+      .then((rel) => {
+        console.log(rel);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  };
+
+
   return (
     <div className="reg-content">
       <div className="inputs">
@@ -49,17 +83,20 @@ const Register = () => {
             Signup
           </button>
         </form>
-        <div className="line"></div>
-        {/* <div className="google">
-          <button type="submit" className="Google">
-            Signup with Google
-          </button>
-        </div> */}
+        <div className="or">OR</div>
+
+        <div className="icons">
+          <div className="google" onClick={signInWithGoogle}>
+            <FaGoogle />
+          </div>
+          <div className="facebook" onClick={signInWithFacebook}>
+            <FaFacebookF />
+          </div>
+          <div className="twitter">
+            <FaTwitter />
+          </div>
+        </div>
       </div>
-      {/* <div className="line"></div>
-      <div className="google">
-        <button type="submit" className="Google">Signup with Google</button>
-      </div> */}
     </div>
   );
 };

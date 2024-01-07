@@ -1,5 +1,8 @@
 import React, { useState } from "react";
 import { FaEye } from "react-icons/fa";
+import { FaGoogle } from "react-icons/fa";
+import { FaFacebookF } from "react-icons/fa";
+import { FaTwitter } from "react-icons/fa";
 import "../Styles/Login.css";
 
 const Login = () => {
@@ -49,12 +52,28 @@ const Login = () => {
               </label>
             </div>
           </div>
+          <div className="forget">
+            <a href="">Forget Password?</a>
+          </div>
 
           <button type="submit" className="signup">
             Login
           </button>
         </form>
-        <div className="line"></div>
+
+        <div className="or">OR</div>
+
+        <div className="icons">
+          <div className="google">
+            <FaGoogle />
+          </div>
+          <div className="facebook">
+            <FaFacebookF />
+          </div>
+          <div className="twitter">
+            <FaTwitter />
+          </div>
+        </div>
       </div>
     </div>
   );
